@@ -26,6 +26,7 @@ public class StarWarsCall {
 
         for(int i=0; i<deser.getResults().size(); i++){
             System.out.println(deser.getResults().get(i).getName());
+            System.out.println(deser.getResults().get(i).getModel());
         }
 
     }
