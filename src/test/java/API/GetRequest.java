@@ -16,18 +16,6 @@ public class GetRequest {
     @Test
     public void GetRequest() throws URISyntaxException, IOException {
 
-
-    /*
-    	1. Open a client (POASTMAN, terminal)
-	2. 2.Specify the HTTP method(GET,POST)
-	3. 3.Specify URL/URI endpoint
-	4. Add query parameter(if needed)
-	5. Add header parameters(content-type, accept)
-	6. Add body parameter (for POST)
-	7. Execute (click on Send button)
-
-     */
-//Open a client
         HttpClient client = HttpClientBuilder.create().build();
 
         //	3. 3.Specify URL/URI endpoint
@@ -56,7 +44,7 @@ public class GetRequest {
         //https://petstore.swagger.io/v2/pet/findByStatus?status=sold
         HttpClient client = HttpClientBuilder.create().build();
         URIBuilder uri = new URIBuilder();
-        uri.setScheme("https");
+        uri.setScheme("https");// we are construct our URI
         uri.setHost("petstore.swagger.io");
         uri.setPath("v2/pet/findByStatus");
         uri.setCustomQuery("status=sold");
